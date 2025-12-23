@@ -140,7 +140,7 @@
             MinimumSize = new Size(315, 408);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form1";
+            Text = "Вход в систему";
             pnMain.ResumeLayout(false);
             pnMain.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pbLogo).EndInit();

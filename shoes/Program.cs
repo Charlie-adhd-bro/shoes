@@ -8,10 +8,32 @@ namespace shoes
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
-            ApplicationConfiguration.Initialize();
-            Application.Run(new FormMain());
+            while (true)
+            {
+                using (var formLogin = new FormMain())
+                {
+                    if (formLogin.ShowDialog() == DialogResult.OK)
+                    {
+                        using (var formProducts = new FormProducts(
+                            formLogin.CurrentUser,
+                            formLogin.IsGuest))
+                        {
+                            if (formProducts.ShowDialog() == DialogResult.Cancel)
+                            {
+                                continue;
+                            }
+                            else
+                            {
+                                break;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        break; 
+                    }
+                }
+            }
         }
     }
 }
