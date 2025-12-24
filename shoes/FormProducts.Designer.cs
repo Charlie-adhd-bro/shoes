@@ -110,9 +110,7 @@
             Controls.Add(pnMain);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(4);
-            MaximizeBox = false;
-            MinimizeBox = false;
-            MinimumSize = new Size(315, 408);
+            MinimumSize = new Size(671, 408);
             Name = "FormProducts";
             Padding = new Padding(10);
             StartPosition = FormStartPosition.CenterScreen;
