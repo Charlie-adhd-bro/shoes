@@ -50,7 +50,7 @@
             pnMain.Controls.Add(lbPassword);
             pnMain.Controls.Add(txtLogin);
             pnMain.Controls.Add(lbLogin);
-            pnMain.Location = new Point(-4, 122);
+            pnMain.Location = new Point(3, 122);
             pnMain.Name = "pnMain";
             pnMain.Size = new Size(307, 231);
             pnMain.TabIndex = 3;
@@ -118,7 +118,7 @@
             // 
             pbLogo.Anchor = AnchorStyles.None;
             pbLogo.Image = (Image)resources.GetObject("pbLogo.Image");
-            pbLogo.Location = new Point(99, 16);
+            pbLogo.Location = new Point(106, 16);
             pbLogo.Name = "pbLogo";
             pbLogo.Size = new Size(100, 100);
             pbLogo.SizeMode = PictureBoxSizeMode.Zoom;
@@ -130,13 +130,11 @@
             AutoScaleDimensions = new SizeF(9F, 19F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(299, 369);
+            ClientSize = new Size(312, 369);
             Controls.Add(pnMain);
             Controls.Add(pbLogo);
             Font = new Font("Times New Roman", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
             Margin = new Padding(4);
-            MaximizeBox = false;
-            MinimizeBox = false;
             MinimumSize = new Size(315, 408);
             Name = "FormMain";
             StartPosition = FormStartPosition.CenterScreen;

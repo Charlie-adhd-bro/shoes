@@ -22,7 +22,7 @@ namespace shoes
 
             using var db = new ShoesBdContext();
             var user = db.Users
-                .Where(w => w.Login == txtLogin.Text && w.Pass == txtPassword.Text)
+                .Where(w => w.Login == txtLogin.Text.Trim() && w.Pass == txtPassword.Text.Trim())
                 .FirstOrDefault();
 
             if (user != null)

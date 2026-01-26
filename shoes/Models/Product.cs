@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace shoes.Models;
+﻿namespace shoes.Models;
 
 public partial class Product
 {
